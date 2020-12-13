@@ -1,6 +1,3 @@
-// task와 columns를 분리해서 생각합시다. task는 어느 column에도 들어갈 수 있습니다.
-// task는 draggable, column은 droppable이 될 것입니다.
-
 const initialData = {
   tasks: {
     "task-1": { id: "task-1", content: "Take out the garbage" },
@@ -14,9 +11,19 @@ const initialData = {
       title: "To do",
       taskIds: ["task-1", "task-2", "task-3", "task-4"],
     },
+    "column-2": {
+      id: "column-2",
+      title: "In progress",
+      taskIds: [],
+    },
+    "column-3": {
+      id: "column-3",
+      title: "Done",
+      taskIds: [],
+    },
   },
   // Facilitate reordering of the columns
-  columnOrder: ["column-1"],
+  columnOrder: ["column-1", "column-2", "column-3"],
 };
 
 export default initialData;
