@@ -1,3 +1,6 @@
+// task와 columns를 분리해서 생각합시다. task는 어느 column에도 들어갈 수 있습니다.
+// task는 draggable, column은 droppable이 될 것입니다.
+
 const initialData = {
   tasks: {
     "task-1": { id: "task-1", content: "Take out the garbage" },
