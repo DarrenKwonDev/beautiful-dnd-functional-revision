@@ -22,7 +22,7 @@ const initialData = {
       taskIds: [],
     },
   },
-  // Facilitate reordering of the columns
+  // column을 순서대로 map으로 뿌리기 위해서 만들어줌
   columnOrder: ["column-1", "column-2", "column-3"],
 };
 
